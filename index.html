@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Noble Savage | Consulting & Training</title>
+    <title>The Noble Savage | Texas Kitchen</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
         .hero-bg {
-            /* This uses a placeholder Texas landscape image */
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1506466010722-395aa2bef877?auto=format&fit=crop&q=80&w=2000');
-        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Background.jpg');
-            background-position: center;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Background.jpg');
+            background-size: cover; background-position: center;
         }
     </style>
 </head>
@@ -21,84 +17,56 @@
     <nav class="flex items-center justify-between px-8 py-6 bg-white shadow-sm sticky top-0 z-50">
         <div class="text-2xl font-bold tracking-tighter uppercase">The Noble Savage</div>
         <div class="hidden md:flex space-x-8 font-medium">
-            <a href="#about" class="hover:text-amber-700 transition">About</a>
-            <a href="#services" class="hover:text-amber-700 transition">Services</a>
-            <a href="#contact" class="px-4 py-2 bg-stone-900 text-white rounded hover:bg-stone-700 transition">Contact</a>
+            <a href="#menu" class="hover:text-amber-800">Menu</a>
+            <a href="#location" class="hover:text-amber-800">Hours & Location</a>
+            <a href="#contact" class="px-4 py-2 bg-stone-900 text-white rounded">Contact</a>
         </div>
     </nav>
 
-    <header class="hero-bg h-[80vh] flex items-center justify-center text-center text-white px-4">
+    <header class="hero-bg h-[70vh] flex items-center justify-center text-center text-white px-4">
         <div class="max-w-3xl">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 italic">Primitive Wisdom. <br>Modern Strategy.</h1>
-            <p class="text-xl md:text-2xl text-stone-200 mb-8 font-light">Consulting and training for the next generation of leadership in Texas.</p>
-            <a href="#services" class="bg-amber-700 hover:bg-amber-800 text-white px-8 py-4 rounded-lg text-lg font-bold transition">Explore Services</a>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 italic">The Noble Savage</h1>
+            <p class="text-xl md:text-2xl mb-8">Authentic Texas Flavors & Primitive Fire Cooking</p>
+            <a href="#menu" class="bg-amber-800 text-white px-8 py-4 rounded-lg font-bold transition">View Menu</a>
         </div>
     </header>
 
-    <section id="about" class="py-24 px-8 max-w-5xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <h2 class="text-3xl font-bold mb-6 text-amber-900 uppercase tracking-widest">Our Philosophy</h2>
-                <p class="text-lg leading-relaxed text-stone-700 mb-4">
-                    In a world of digital noise, we return to the fundamentals of human interaction, leadership, and resilient strategy. 
-                </p>
-                <p class="text-lg leading-relaxed text-stone-700">
-                    Based in Texas, we help organizations navigate complex transitions by blending modern tools with timeless, grounded principles.
-                </p>
+    <section id="menu" class="py-24 px-8 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-16 uppercase tracking-widest">From The Pit</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="flex justify-between border-b border-stone-300 pb-4">
+                <div>
+                    <h3 class="font-bold text-xl">Signature Brisket</h3>
+                    <p class="text-stone-600">Post oak smoked for 14 hours</p>
+                </div>
+                <span class="font-bold text-amber-800">$24</span>
             </div>
-            <div class="bg-stone-200 aspect-square rounded-2xl overflow-hidden shadow-xl">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="About" class="w-full h-full object-cover">
+            <div class="flex justify-between border-b border-stone-300 pb-4">
+                <div>
+                    <h3 class="font-bold text-xl">Savage Beef Ribs</h3>
+                    <p class="text-stone-600">Giant salt & pepper crust</p>
+                </div>
+                <span class="font-bold text-amber-800">$38</span>
+            </div>
+            </div>
+    </section>
+
+    <section id="location" class="bg-stone-900 text-white py-24 px-8">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 text-center md:text-left">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Find Us</h2>
+                <p class="text-stone-400 text-lg mb-2">123 Texas Trail</p>
+                <p class="text-stone-400 text-lg">Austin, TX 78701</p>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Hours</h2>
+                <p class="text-stone-400 text-lg">Wed – Sun: 11am – Sold Out</p>
+                <p class="text-stone-400 text-lg">Mon – Tue: Closed</p>
             </div>
         </div>
     </section>
 
-    <section id="services" class="bg-stone-900 py-24 px-8 text-white">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold mb-16 text-center italic">Consulting Pillars</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 border border-stone-700 rounded-xl hover:bg-stone-800 transition">
-                    <div class="text-amber-500 text-3xl mb-4 font-bold">01</div>
-                    <h3 class="text-xl font-bold mb-4">Executive Training</h3>
-                    <p class="text-stone-400">Leadership development focused on grit, clarity, and high-stakes decision making.</p>
-                </div>
-                <div class="p-8 border border-stone-700 rounded-xl hover:bg-stone-800 transition">
-                    <div class="text-amber-500 text-3xl mb-4 font-bold">02</div>
-                    <h3 class="text-xl font-bold mb-4">Organizational Strategy</h3>
-                    <p class="text-stone-400">Streamlining internal processes to foster growth without losing your company culture.</p>
-                </div>
-                <div class="p-8 border border-stone-700 rounded-xl hover:bg-stone-800 transition">
-                    <div class="text-amber-500 text-3xl mb-4 font-bold">03</div>
-                    <h3 class="text-xl font-bold mb-4">Operational Resilience</h3>
-                    <p class="text-stone-400">Hardening your business against market volatility and digital disruptions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-24 px-8 max-w-2xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
-        <p class="text-stone-600 mb-12 font-medium">Ready to move forward? Let's discuss your objectives.</p>
-        
-        <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST" class="space-y-4 text-left">
-            <div>
-                <label class="block text-sm font-bold mb-2 uppercase tracking-wide">Name</label>
-                <input type="text" name="name" class="w-full p-4 border border-stone-300 rounded-lg outline-amber-700" required>
-            </div>
-            <div>
-                <label class="block text-sm font-bold mb-2 uppercase tracking-wide">Email</label>
-                <input type="email" name="email" class="w-full p-4 border border-stone-300 rounded-lg outline-amber-700" required>
-            </div>
-            <div>
-                <label class="block text-sm font-bold mb-2 uppercase tracking-wide">Message</label>
-                <textarea name="message" rows="5" class="w-full p-4 border border-stone-300 rounded-lg outline-amber-700" required></textarea>
-            </div>
-            <button type="submit" class="w-full bg-stone-900 text-white font-bold py-4 rounded-lg hover:bg-amber-900 transition shadow-lg uppercase tracking-widest">
-                Send Message
-            </button>
-        </form>
-    </section>
-
-    <footer class="py-12 border-t border-stone-200 text-center text-stone-500 text-sm">
+    <footer class="py-12 text-center text-stone-500 text-sm">
         <p>&copy; 2026 THE NOBLE SAVAGE TX. All Rights Reserved.</p>
     </footer>
 
