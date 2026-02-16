@@ -3,71 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Noble Savage | Texas Kitchen</title>
+    <title>The Noble Savage | Your New Favorite Dive</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        h1, h2, h3 { font-family: 'Oswald', sans-serif; }
+        body { font-family: 'Inter', sans-serif; }
         .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Background.jpg');
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('Background.jpg');
             background-size: cover; background-position: center;
         }
     </style>
 </head>
-<body class="bg-stone-50 text-stone-900">
+<body class="bg-[#fafaf9] text-stone-900">
 
-    <nav class="flex items-center justify-between px-8 py-6 bg-white shadow-sm sticky top-0 z-50">
-        <div class="text-2xl font-bold tracking-tighter uppercase">The Noble Savage</div>
-        <div class="hidden md:flex space-x-8 font-medium">
-            <a href="#menu" class="hover:text-amber-800">Menu</a>
-            <a href="#location" class="hover:text-amber-800">Hours & Location</a>
-            <a href="#contact" class="px-4 py-2 bg-stone-900 text-white rounded">Contact</a>
+    <nav class="flex items-center justify-between px-6 py-4 bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200">
+        <div class="text-sm font-semibold tracking-wide uppercase">Full Menu</div>
+        <div class="text-xl font-bold uppercase tracking-tighter">Your New Favorite Dive</div>
+        <div class="flex space-x-4">
+            <span class="text-lg">f</span> <span class="text-lg">i</span> <span class="text-lg">t</span>
         </div>
     </nav>
 
-    <header class="hero-bg h-[70vh] flex items-center justify-center text-center text-white px-4">
-        <div class="max-w-3xl">
-            <h1 class="text-5xl md:text-7xl font-bold mb-4 italic">The Noble Savage</h1>
-            <p class="text-xl md:text-2xl mb-8">Authentic Texas Flavors & Primitive Fire Cooking</p>
-            <a href="#menu" class="bg-amber-800 text-white px-8 py-4 rounded-lg font-bold transition">View Menu</a>
-        </div>
+    <header class="hero-bg min-h-[85vh] flex flex-col items-center justify-center text-center text-white px-6">
+        <h1 class="text-7xl md:text-9xl font-bold mb-4 drop-shadow-2xl uppercase">The Noble Savage</h1>
+        <p class="max-w-2xl text-lg md:text-xl font-medium leading-relaxed drop-shadow-lg">
+            From juicy burgers to mouthwatering tacos and tender brisket, every dish is made to order using the freshest ingredients. Pair it with an ice-cold beer or a glass of wine for the perfect anytime meal. Our menu is simple but packed with flavor—no frills, just really great food.
+        </p>
     </header>
 
-    <section id="menu" class="py-24 px-8 max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-16 uppercase tracking-widest">From The Pit</h2>
-        <div class="grid md:grid-cols-2 gap-12">
-            <div class="flex justify-between border-b border-stone-300 pb-4">
-                <div>
-                    <h3 class="font-bold text-xl">Signature Brisket</h3>
-                    <p class="text-stone-600">Post oak smoked for 14 hours</p>
-                </div>
-                <span class="font-bold text-amber-800">$24</span>
-            </div>
-            <div class="flex justify-between border-b border-stone-300 pb-4">
-                <div>
-                    <h3 class="font-bold text-xl">Savage Beef Ribs</h3>
-                    <p class="text-stone-600">Giant salt & pepper crust</p>
-                </div>
-                <span class="font-bold text-amber-800">$38</span>
-            </div>
-            </div>
-    </section>
-
-    <section id="location" class="bg-stone-900 text-white py-24 px-8">
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 text-center md:text-left">
-            <div>
-                <h2 class="text-3xl font-bold mb-6">Find Us</h2>
-                <p class="text-stone-400 text-lg mb-2">123 Texas Trail</p>
-                <p class="text-stone-400 text-lg">Austin, TX 78701</p>
-            </div>
-            <div>
-                <h2 class="text-3xl font-bold mb-6">Hours</h2>
-                <p class="text-stone-400 text-lg">Wed – Sun: 11am – Sold Out</p>
-                <p class="text-stone-400 text-lg">Mon – Tue: Closed</p>
-            </div>
+    <section class="py-20 px-6 max-w-5xl mx-auto grid md:grid-cols-2 gap-16 text-center md:text-left">
+        <div>
+            <h2 class="text-4xl mb-4">Good Times, All the Time</h2>
+            <p class="text-stone-600">Check in for game nights, live music, trivia, and more. Every night's worth celebrating... so do it with us.</p>
+        </div>
+        <div>
+            <h2 class="text-4xl mb-4">Swing By and Say Hi</h2>
+            <p class="text-stone-600">Questions? Looking to host an event? Or just wanna know what's on tap? Drop us a line or stop by. We'll save you a seat.</p>
         </div>
     </section>
 
-    <footer class="py-12 text-center text-stone-500 text-sm">
-        <p>&copy; 2026 THE NOBLE SAVAGE TX. All Rights Reserved.</p>
+    <div class="bg-stone-100 py-12 text-center px-6">
+        <p class="text-xl font-semibold italic max-w-2xl mx-auto">
+            "We are a completely outdoor space, so if the weather is frightful, we may be closed - Give us a shout before you head this way."
+        </p>
+    </div>
+
+    <main class="max-w-4xl mx-auto py-24 px-6">
+        <h2 class="text-5xl text-[#e65a2e] mb-12 uppercase text-center">Food & Drink Menu</h2>
+
+        <div class="mb-20">
+            <h3 class="text-4xl text-[#e65a2e] border-b-2 border-[#e65a2e] mb-8 pb-2">Apps & Salads</h3>
+            <div class="space-y-8">
+                <div>
+                    <div class="flex justify-between items-baseline"><h4 class="text-2xl">Smoked Elotes</h4> <span class="font-bold">$4</span></div>
+                    <p class="text-stone-600 text-sm italic">Add Al Pastor +$7 | Beef/Brisket/Chicken +$8</p>
+                </div>
+                <div>
+                    <div class="flex justify-between items-baseline"><h4 class="text-2xl">Black Borracho Beans</h4> <span class="font-bold">$3.50</span></div>
+                </div>
+                <div>
+                    <div class="flex justify-between items-baseline"><h4 class="text-2xl">Noble Nachos</h4> <span class="font-bold">$4 / $8</span></div>
+                    <p class="text-stone-600 text-sm">Small: Cheese $4, Al Pastor $6, Beef Fajita $8</p>
+                </div>
+                <div>
+                    <div class="flex justify-between items-baseline"><h4 class="text-2xl">Adult Lunchables</h4> <span class="font-bold">$8</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-20 bg-orange-50 p-8 rounded-xl border border-orange-200">
+            <h3 class="text-4xl text-[#e65a2e] mb-8">Daily Specials</h3>
+            <div class="space-y-6">
+                <p><strong>WEDNESDAY:</strong> Magnolia Mudroast — $13.99</p>
+                <p><strong>THURSDAY:</strong> Birria Tacos (3) — $13.99</p>
+                <p><strong>FRI & SAT:</strong> Jason's Badass Brisket — Prices Vary</p>
+            </div>
+        </div>
+
+        <div class="mb-20">
+            <h3 class="text-4xl text-[#e65a2e] border-b-2 border-[#e65a2e] mb-8 pb-2">Every Day Bangers</h3>
+            <div class="space-y-8">
+                <div>
+                    <div class="flex justify-between items-baseline"><h4 class="text-2xl">Savage Burger</h4> <span class="font-bold">$8</span></div>
+                    <p class="text-stone-600 text-sm italic">Double meat smash burgers. Add extra patty $3.</p>
+                </div>
+                <div>
+                    <div class="flex justify-between items-baseline"><h4 class="text-2xl">Texican Street Tacos</h4> <span class="font-bold">$3 - $4</span></div>
+                </div>
+                <div>
+                    <div class="flex justify-between items-baseline"><h4 class="text-2xl">BLT</h4> <span class="font-bold">$9.50</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white py-12 border-t border-stone-200 text-center px-6">
+        <p class="text-stone-500 text-sm">All of our dishes are made to order so we may occasionally run out of an item. Not to worry, everything is delicious.</p>
+        <p class="mt-4 font-bold uppercase">&copy; 2026 THE NOBLE SAVAGE TX</p>
     </footer>
 
 </body>
