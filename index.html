@@ -11,7 +11,7 @@
         h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; }
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('Background.jpg');
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('Background.jpg');
             background-size: cover; background-position: center;
         }
         .menu-accent { color: #e65a2e; }
@@ -21,18 +21,26 @@
 <body class="bg-[#fafaf9] text-stone-900 leading-relaxed">
 
     <nav class="flex items-center justify-between px-6 py-4 bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200">
-        <a href="#menu" class="text-xs font-bold tracking-widest uppercase text-[#e65a2e] hover:text-orange-700 transition">Full Menu</a>
+        <div class="flex-1"></div>
         <div class="text-xl font-bold uppercase tracking-tighter text-center flex-1">Your New Favorite Dive</div>
-        <div class="flex space-x-6 text-xl">
+        <div class="flex flex-1 justify-end space-x-6 text-xl">
             <a href="https://facebook.com/thenoblesavagetx" target="_blank" class="hover:text-blue-600 transition"><i class="fab fa-facebook"></i></a>
             <a href="https://instagram.com/thenoblesavagetx" target="_blank" class="hover:text-pink-600 transition"><i class="fab fa-instagram"></i></a>
             <a href="https://tiktok.com/@thenoblesavagetx" target="_blank" class="hover:text-black transition"><i class="fab fa-tiktok"></i></a>
         </div>
     </nav>
 
-    <header class="hero-bg min-h-[60vh] flex flex-col items-center justify-center text-center text-white px-6">
-        <h1 class="text-7xl md:text-9xl font-bold mb-4 drop-shadow-2xl uppercase tracking-tight text-white">The Noble Savage</h1>
-        <p class="max-w-2xl text-lg md:text-xl font-medium leading-relaxed drop-shadow-lg italic text-white">"No frills, just really great food."</p>
+    <header class="hero-bg min-h-[85vh] flex flex-col items-center justify-between text-center text-white px-6 py-12">
+        <div class="flex-1"></div>
+        <div class="max-w-4xl">
+            <h1 class="text-7xl md:text-9xl font-bold mb-4 drop-shadow-2xl uppercase tracking-tight">The Noble Savage</h1>
+            <p class="max-w-2xl mx-auto text-lg md:text-xl font-medium leading-relaxed drop-shadow-lg italic">"No frills, just really great food."</p>
+        </div>
+        <div class="flex-1 flex items-end">
+            <p class="max-w-2xl text-sm md:text-base font-bold italic bg-black/40 backdrop-blur-sm p-4 rounded-lg border border-white/20">
+                "We are a completely outdoor space, so if the weather is frightful, we may be closed - Give us a shout before you head this way."
+            </p>
+        </div>
     </header>
 
     <main id="menu" class="max-w-4xl mx-auto py-24 px-6">
@@ -46,7 +54,7 @@
                         <h4 class="text-2xl uppercase font-bold">Smoked Elotes</h4>
                         <span class="text-xl font-bold">$4</span>
                     </div>
-                    <p class="text-sm text-stone-600 mt-2 italic">Smoked corn slathered in tangy crema, dusted generously with chili seasoning, cotija cheese, and finished with a fresh squeeze of lime.</p>
+                    <p class="text-sm text-stone-600 mt-2 italic text-stone-600">Smoked corn slathered in tangy crema, dusted generously with chili seasoning, cotija cheese, and finished with a fresh squeeze of lime.</p>
                     <div class="text-xs font-bold text-stone-500 mt-2 space-y-1 uppercase">
                         <p>Add Al Pastor – $7.00 | Add Beef, Brisket, or Chicken – $8.00</p>
                         <p class="text-stone-900 border-l-4 border-orange-500 pl-2 py-1 bg-orange-50 font-bold">Savage Sunday – $13.00: Layered longtime with Black Borracho Beans, Cotija Cheese, and topped with your meat of choice.</p>
@@ -55,10 +63,10 @@
 
                 <div>
                     <div class="flex justify-between items-baseline border-b border-stone-200 pb-1">
-                        <h4 class="text-2xl uppercase font-bold">Noble Nachos</h4>
+                        <h4 class="text-2xl uppercase font-bold text-stone-900">Noble Nachos</h4>
                     </div>
                     <p class="text-sm text-stone-600 mt-2 italic">Not your normal ballpark nachos! Tag our Facebook page to share your savage spin with the world!</p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3 text-sm font-bold bg-white p-4 rounded border border-stone-100 shadow-sm uppercase tracking-tight">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3 text-sm font-bold bg-white p-4 rounded border border-stone-100 shadow-sm uppercase tracking-tight text-stone-900">
                         <p>Small: Cheese $4 / Al Pastor $6 / Beef Fajita $8 / Chicken $8</p>
                         <p>Large: Cheese $8 / Al Pastor $10 / Beef Fajita $12 / Chicken $12</p>
                         <p class="text-orange-700">Kids Nachos: $2</p>
@@ -92,28 +100,28 @@
 
         <div class="mb-20">
             <h3 class="text-4xl menu-accent border-b-4 menu-border mb-8 pb-2 uppercase italic">The Bangers</h3>
-            <div class="space-y-12">
+            <div class="space-y-12 text-stone-900">
                 <div>
                     <div class="flex justify-between items-baseline border-b border-stone-200 pb-1">
                         <h4 class="text-2xl uppercase font-bold tracking-tight">Savage Burger</h4>
-                        <span class="text-xl font-bold text-stone-900">$8</span>
+                        <span class="text-xl font-bold">$8</span>
                     </div>
                     <p class="text-sm text-stone-600 mt-2 italic font-semibold">Double meat smash burgers served open-faced with your choice of cheese.</p>
                     <p class="text-xs text-stone-500 mt-2 font-bold uppercase tracking-wider">Cheese: Pepper Jack, American, Colby Jack, Cheddar | Add extra patty: +$3 | Bacon Jam: +$2</p>
                 </div>
                 <div>
                     <div class="flex justify-between items-baseline border-b border-stone-200 pb-1">
-                        <h4 class="text-2xl uppercase font-bold tracking-tight text-stone-900">Quesadillas</h4>
-                        <span class="text-xl font-bold text-stone-900">$8</span>
+                        <h4 class="text-2xl uppercase font-bold tracking-tight">Quesadillas</h4>
+                        <span class="text-xl font-bold">$8</span>
                     </div>
                     <p class="text-sm text-stone-600 mt-2 italic font-semibold">Large flour tortillas loaded with melted cheese and grilled to perfection. Served sizzling with your choice of protein.</p>
                     <p class="text-xs text-stone-500 mt-2 font-bold uppercase tracking-wider">Options: Beef Fajita, Chicken, or Al Pastor</p>
                 </div>
                 <div>
                     <div class="flex justify-between items-baseline border-b border-stone-200 pb-1">
-                        <h4 class="text-2xl uppercase font-bold tracking-tight text-stone-900">Texican Street Tacos</h4>
+                        <h4 class="text-2xl uppercase font-bold tracking-tight">Texican Street Tacos</h4>
                     </div>
-                    <div class="flex flex-wrap gap-8 mt-2 text-lg font-bold text-stone-900">
+                    <div class="flex flex-wrap gap-8 mt-2 text-lg font-bold">
                         <p>Al Pastor – $3 each</p>
                         <p>Beef Fajita – $4 each</p>
                         <p>Chicken – $4 each</p>
@@ -124,7 +132,7 @@
 
         <div class="mb-20">
             <h3 class="text-4xl menu-accent border-b-4 menu-border mb-8 pb-2 uppercase italic text-center">Beer & Wine</h3>
-            <div class="grid md:grid-cols-2 gap-8 mt-12">
+            <div class="grid md:grid-cols-2 gap-8 mt-12 text-stone-900">
                 <div class="bg-white p-8 rounded-3xl border border-stone-200 shadow-sm">
                     <h4 class="text-3xl mb-4 text-[#e65a2e] uppercase italic border-b border-orange-50 pb-2">Wine</h4>
                     <p class="text-sm font-bold leading-loose text-stone-700 tracking-widest uppercase italic">Pinot Grigio, Sweet Red, Moscato, Chardonnay, Merlot, Cabernet</p>
@@ -150,7 +158,7 @@
         </div>
     </main>
 
-    <section id="location" class="py-20 px-6 bg-stone-900 text-white">
+    <section id="location" class="py-20 px-6 bg-stone-900 text-white border-t border-white/10">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div>
                 <h2 class="text-6xl menu-accent mb-8 uppercase italic font-bold">Find the Pit</h2>
